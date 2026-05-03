@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мифы о детской миопии — разбираем вместе</title>
+  <meta name="description" content="Образовательный проект о мифах детской близорукости. Научные факты, разбор заблуждений, рекомендации специалистов." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- TODO: при желании замените шрифт — подобраны специально под тёплый образовательный стиль -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== НАВИГАЦИЯ ========== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav-logo">
+        <!-- TODO: замените текст логотипа -->
+        <span class="logo-eye">👁</span>
+        <span>МиоПравда</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link">Вступление</a></li>
+        <li><a href="#myths" class="nav-link">Мифы</a></li>
+        <li><a href="#conclusion" class="nav-link">Итоги</a></li>
+        <li><a href="#materials" class="nav-link">Материалы</a></li>
+        <li><a href="#authors" class="nav-link">Авторы</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-dots"></div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <!-- TODO: замените заголовок -->
+          <div class="hero-badge">Образовательный проект</div>
+          <h1 class="hero-title">
+            Мифы о<br />
+            <span class="hero-title-accent">детской миопии</span>
+          </h1>
+          <!-- TODO: замените подзаголовок -->
+          <p class="hero-sub">
+		  Детская близорукость редко возникает внезапно – это постепенный процесс, связанный с ростом глазного яблока. В норме глаз растет вместе с ребенком, но при миопии он удлиняется больше, чем нужно. Изображение начинает фокусироваться не на сетчатке, а перед ней, и дальние объекты становятся размытыми.
+		  </p>
+		  <p class="hero-sub">
+		  Ученые и врачи активно изучают миопию, в том числе причины ее появления и развития. Однако в своей практике  они встречаются с самыми разными заблуждениями, которые касаются этого заболевания. Существует несколько распространённых мифов о детской миопии (близорукости), которые важно <strong>развенчивать</strong>.
+          </p>
+          <div class="hero-actions">
+            <a href="#myths" class="btn btn-primary">Разобрать мифы</a>
+            <a href="#materials" class="btn btn-ghost">Скачать материалы</a>
+          </div>
+          <!-- TODO: замените статистику -->
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num">5</span>
+              <span class="stat-label">мифов разобрано</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">эксперта</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">научный подход</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TODO: замените src на путь к изображению маскота -->
+        <!-- Маскот — правая часть hero -->
+        <div class="hero-mascot reveal reveal-delay-1">
+          <div class="mascot-bubble">
+            Привет! Я Гриша — <br />будем разбираться вместе!
+          </div>
+          <img
+            src="mascot.png"
+            alt="Маскот проекта — учёный бобёр Гриша"
+            class="mascot-img"
+            id="mascot-hero"
+          />
+          <!-- TODO: если маскот на чёрном фоне — используйте mix-blend-mode или PNG с прозрачностью -->
+        </div>
+      </div>
+
+      <!-- Декоративная волна -->
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-section)" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ========== МИФЫ ========== -->
+    <section class="myths-section" id="myths">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Разбор заблуждений</span>
+          <h2 class="section-title">Мифы и правда</h2>
+          <p class="section-desc">
+            <!-- TODO: замените описание раздела -->
+            Каждый миф — это видео, научный факт и практический вывод.
+            Смотрите, читайте, делитесь с близкими.
+          </p>
+        </div>
+
+        <!-- ===== КОМПОНЕНТ МИФА (переиспользуемый) ===== -->
+        <!-- Копируйте блок .myth-card для добавления нового мифа -->
+
+        <!-- МИФ 1 -->
+        <article class="myth-card reveal" data-myth="1">
+          <button class="myth-card-header" aria-expanded="false" aria-controls="myth-body-1">
+            <div class="myth-number">01</div>
+            <div class="myth-label-wrap">
+              <span class="myth-label myth-label--myth">МИФ</span>
+              <!-- TODO: замените текст мифа -->
+              <h3 class="myth-title">📱 Телефоны и планшеты — главная причина близорукости.</h3>
+            </div>
+          
+            <div class="myth-chevron" aria-hidden="true"></div>
+          </button>
+
+          <div class="myth-body" id="myth-body-1">
+            <div class="myth-body-inner">
+            <div class="myth-fact">
+              <div class="fact-icon">✅</div>
+              <div>
+                <strong class="fact-title">Правда</strong>
+                <!-- TODO: замените научный факт -->
+                <p>Гаджеты не вызывают близорукость напрямую, но длительная фокусировка на близком расстоянии усиливает прогрессирование миопии.</p>
+				<p>Недостаток дневного света повышает риски развития миопии (<strong>дети должны проводить на улице 2+ часа в день</strong>).</p>
+</p>
+              </div>
+            </div>
+
+            <div class="myth-conclusion">
+              <div class="fact-icon">📌</div>
+              <div>
+                <strong class="fact-title">Совет</strong>
+                <!-- TODO: замените вывод -->
+                <p>Используйте правило <strong>«20-20-20»</strong> — каждые 20 минут смотреть на объект в 20 шагах 20 секунд.</p>
+				<p>Настройте ночной режим на мобильных устройствах.</p>
+				<p>Расстояние до экрана должно составлять не менее 40 см.</p>
+              </div>
+            </div>
+
+            <!-- TODO: вставьте embed-код Rutube для видео 1 -->
+            <div class="video-wrap">
+              <div class="video-label">📹 Видео по теме</div>
+              <div class="video-responsive">
+                <!-- Вставьте сюда embed-код Rutube -->
+                <!-- Пример: <iframe src="https://rutube.ru/play/embed/XXXX" ... ></iframe> -->
+                <div class="video-placeholder">
+                  <div class="video-placeholder-inner">
+                    <div class="play-btn">▶</div>
+                    <p>Вставьте embed-код Rutube</p>
+                    <code>&lt;iframe src="https://rutube.ru/play/embed/ВАШИ_ID"<br/>frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+		</article>
+        <!-- МИФ 2 -->
+        <article class="myth-card reveal" data-myth="2">
+          <button class="myth-card-header" aria-expanded="false" aria-controls="myth-body-2">
+            <div class="myth-number">02</div>
+            <div class="myth-label-wrap">
+              <span class="myth-label myth-label--myth">МИФ</span>
+              <!-- TODO: замените текст мифа -->
+              <h3 class="myth-title">👓 Очки делают зрение хуже.</h3>
+            </div>
+          
+            <div class="myth-chevron" aria-hidden="true"></div>
+          </button>
+
+          <div class="myth-body" id="myth-body-2">
+            <div class="myth-body-inner">
+            <div class="myth-fact">
+              <div class="fact-icon">✅</div>
+              <div>
+                <strong class="fact-title">Правда</strong>
+                <!-- TODO: замените научный факт -->
+                <p>Если очки подобраны правильно, они не ухудшают зрение.</p>
+				<p>Отказ от очков при близорукости приводит к ещё большей нагрузке и прогрессированию.</p>
+              </div>
+            </div>
+			
+			<div class="myth-conclusion">
+              <div class="fact-icon">❗</div>
+              <div>
+                <strong class="fact-title">Когда очки действительно могут навредить?</strong>
+                <!-- TODO: замените вывод -->
+                <p>Если они не соответствуют реальным диоптриям.</p>
+				<p>Если ребенок носит их непостоянно (при высокой миопии).</p>
+              </div>
+            </div>
+
+            <div class="myth-conclusion">
+              <div class="fact-icon">📌</div>
+              <div>
+                <strong class="fact-title">Вывод</strong>
+                <!-- TODO: замените вывод -->
+                <p>Не давайте ребёнку «отдыхать» от очков в надежде на улучшение. Носить очки по назначению врача — значит заботиться о зрении.</p>
+              </div>
+            </div>
+
+            <!-- TODO: вставьте embed-код Rutube для видео 2 -->
+            <div class="video-wrap">
+              <div class="video-label">📹 Видео по теме</div>
+              <div class="video-responsive">
+                <!-- Вставьте сюда embed-код Rutube -->
+                <div class="video-placeholder">
+                  <div class="video-placeholder-inner">
+                    <div class="play-btn">▶</div>
+                    <p>Вставьте embed-код Rutube</p>
+                    <code>&lt;iframe src="https://rutube.ru/play/embed/ВАШИ_ID"<br/>frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+		</article>
+        <!-- МИФ 3 -->
+        <article class="myth-card reveal" data-myth="3">
+          <button class="myth-card-header" aria-expanded="false" aria-controls="myth-body-3">
+            <div class="myth-number">03</div>
+            <div class="myth-label-wrap">
+              <span class="myth-label myth-label--myth">МИФ</span>
+              <!-- TODO: замените текст мифа -->
+              <h3 class="myth-title">Близорукость — наследственная болезнь. Если родители в очках — ребёнок тоже будет.</h3>
+            </div>
+          
+            <div class="myth-chevron" aria-hidden="true"></div>
+          </button>
+
+          <div class="myth-body" id="myth-body-3">
+            <div class="myth-body-inner">
+            <div class="myth-fact">
+              <div class="fact-icon">✅</div>
+              <div>
+                <strong class="fact-title">Правда</strong>
+                <!-- TODO: замените научный факт -->
+                <p>Генетика — лишь один из факторов. Современные исследования показывают, что решающую роль играет образ жизни: время на улице, нагрузки на близком расстоянии, освещение. Даже при отягощённой наследственности профилактика реально снижает риск.</p>
+              </div>
+            </div>
+
+            <div class="myth-conclusion">
+              <div class="fact-icon">📌</div>
+              <div>
+                <strong class="fact-title">Вывод</strong>
+                <!-- TODO: замените вывод -->
+                <p>Генетика — не приговор. Ежедневные прогулки на улице (от 2 часов) — одна из самых доказанных мер профилактики миопии у детей.</p>
+              </div>
+            </div>
+
+            <!-- TODO: вставьте embed-код Rutube для видео 3 -->
+            <div class="video-wrap">
+              <div class="video-label">📹 Видео по теме</div>
+              <div class="video-responsive">
+                <!-- Вставьте сюда embed-код Rutube -->
+                <div class="video-placeholder">
+                  <div class="video-placeholder-inner">
+                    <div class="play-btn">▶</div>
+                    <p>Вставьте embed-код Rutube</p>
+                    <code>&lt;iframe src="https://rutube.ru/play/embed/ВАШИ_ID"<br/>frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+		</article>
+        <!-- МИФ 4 -->
+        <article class="myth-card reveal" data-myth="4">
+          <button class="myth-card-header" aria-expanded="false" aria-controls="myth-body-4">
+            <div class="myth-number">04</div>
+            <div class="myth-label-wrap">
+              <span class="myth-label myth-label--myth">МИФ</span>
+              <!-- TODO: замените текст мифа -->
+              <h3 class="myth-title">Упражнения для глаз восстанавливают зрение при миопии.</h3>
+            </div>
+          
+            <div class="myth-chevron" aria-hidden="true"></div>
+          </button>
+
+          <div class="myth-body" id="myth-body-4">
+            <div class="myth-body-inner">
+            <div class="myth-fact">
+              <div class="fact-icon">✅</div>
+              <div>
+                <strong class="fact-title">Правда</strong>
+                <!-- TODO: замените научный факт -->
+                <p>Гимнастика для глаз снижает усталость, но не изменяет форму глазного яблока — причину миопии. Клинических доказательств того, что упражнения «лечат» близорукость, не существует. Они могут быть полезны как профилактика перенапряжения, но не замена коррекции.</p>
+              </div>
+            </div>
+
+            <div class="myth-conclusion">
+              <div class="fact-icon">📌</div>
+              <div>
+                <strong class="fact-title">Вывод</strong>
+                <!-- TODO: замените вывод -->
+                <p>Делайте гимнастику — это полезно для снятия усталости. Но не ждите, что она «вернёт» диоптрии. Обратитесь к офтальмологу за реальными методами коррекции.</p>
+              </div>
+            </div>
+
+            <!-- TODO: вставьте embed-код Rutube для видео 4 -->
+            <div class="video-wrap">
+              <div class="video-label">📹 Видео по теме</div>
+              <div class="video-responsive">
+                <!-- Вставьте сюда embed-код Rutube -->
+                <div class="video-placeholder">
+                  <div class="video-placeholder-inner">
+                    <div class="play-btn">▶</div>
+                    <p>Вставьте embed-код Rutube</p>
+                    <code>&lt;iframe src="https://rutube.ru/play/embed/ВАШИ_ID"<br/>frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+		</article>
+        <!-- МИФ 5 -->
+        <article class="myth-card reveal" data-myth="5">
+          <button class="myth-card-header" aria-expanded="false" aria-controls="myth-body-5">
+            <div class="myth-number">05</div>
+            <div class="myth-label-wrap">
+              <span class="myth-label myth-label--myth">МИФ</span>
+              <!-- TODO: замените текст мифа -->
+              <h3 class="myth-title">Детям нельзя носить контактные линзы — только очки.</h3>
+            </div>
+          
+            <div class="myth-chevron" aria-hidden="true"></div>
+          </button>
+
+          <div class="myth-body" id="myth-body-5">
+            <div class="myth-body-inner">
+            <div class="myth-fact">
+              <div class="fact-icon">✅</div>
+              <div>
+                <strong class="fact-title">Правда</strong>
+                <!-- TODO: замените научный факт -->
+                <p>Контактные линзы могут быть безопасны для детей при соблюдении правил гигиены и рекомендаций врача. Более того, ортокератологические линзы специально разработаны для детей и доказано замедляют прогрессирование миопии.</p>
+              </div>
+            </div>
+
+            <div class="myth-conclusion">
+              <div class="fact-icon">📌</div>
+              <div>
+                <strong class="fact-title">Вывод</strong>
+                <!-- TODO: замените вывод -->
+                <p>Вопрос о линзах решается индивидуально с офтальмологом. Возраст и дисциплина ребёнка — важные факторы, но не абсолютный запрет.</p>
+              </div>
+            </div>
+
+            <!-- TODO: вставьте embed-код Rutube для видео 5 -->
+            <div class="video-wrap">
+              <div class="video-label">📹 Видео по теме</div>
+              <div class="video-responsive">
+                <!-- Вставьте сюда embed-код Rutube -->
+                <div class="video-placeholder">
+                  <div class="video-placeholder-inner">
+                    <div class="play-btn">▶</div>
+                    <p>Вставьте embed-код Rutube</p>
+                    <code>&lt;iframe src="https://rutube.ru/play/embed/ВАШИ_ID"<br/>frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+		</article>
+        <!-- TODO: добавьте новые мифы, скопировав блок .myth-card выше -->
+
+      </div>
+    </section>
+
+    <!-- ========== ЗАКЛЮЧЕНИЕ ========== -->
+    <section class="conclusion-section" id="conclusion">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Итоги</span>
+          <h2 class="section-title">Знания — лучшая защита зрения</h2>
+        </div>
+
+        <div class="conclusion-grid">
+          <div class="conclusion-card reveal">
+            <div class="conclusion-icon">🔬</div>
+            <!-- TODO: замените текст -->
+            <h3>Доверяйте науке</h3>
+            <p>Современная офтальмология располагает эффективными методами замедления миопии. Не полагайтесь на народные средства.</p>
+          </div>
+          <div class="conclusion-card reveal reveal-delay-1">
+            <div class="conclusion-icon">🌳</div>
+            <!-- TODO: замените текст -->
+            <h3>Время на улице</h3>
+            <p>2 часа естественного освещения в день — простая и доказанная профилактика. Прогулки важнее любых упражнений.</p>
+          </div>
+          <div class="conclusion-card reveal reveal-delay-2">
+            <div class="conclusion-icon">📅</div>
+            <!-- TODO: замените текст -->
+            <h3>Регулярный осмотр</h3>
+            <p>Проверяйте зрение ребёнка хотя бы раз в год. Ранняя диагностика — залог лучшего прогноза.</p>
+          </div>
+        </div>
+
+        <!-- Акцентный блок с маскотом -->
+        <div class="cta-block reveal">
+          <div class="cta-mascot-mini">
+            <!-- TODO: замените src на маскота -->
+            <img src="mascot.png" alt="Маскот Гриша" />
+          </div>
+          <div class="cta-text">
+            <!-- TODO: замените текст -->
+            <h3>Позаботьтесь о зрении вашего ребёнка сегодня</h3>
+            <p>Запишитесь на консультацию к офтальмологу или изучите наши справочные материалы.</p>
+            <div class="cta-buttons">
+              <a href="#materials" class="btn btn-primary">Изучить материалы</a>
+              <a href="#authors" class="btn btn-ghost">Задать вопрос</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== СПРАВОЧНЫЕ МАТЕРИАЛЫ ========== -->
+    <section class="materials-section" id="materials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Библиотека</span>
+          <h2 class="section-title">Справочные материалы</h2>
+          <p class="section-desc">
+            <!-- TODO: замените описание -->
+            Скачайте PDF-файлы с подробной информацией для родителей и специалистов.
+          </p>
+        </div>
+
+        <div class="materials-grid">
+
+          <!-- TODO: замените название, описание и ссылку -->
+          <div class="material-card reveal">
+            <div class="material-icon">📄</div>
+            <div class="material-info">
+              <h4 class="material-name">Руководство для родителей</h4>
+              <p class="material-desc">Что нужно знать о детской миопии — коротко и по делу</p>
+              <div class="material-meta">PDF · 2.4 МБ</div>
+            </div>
+            <div class="material-actions">
+              <!-- TODO: замените href на реальный путь к файлу -->
+              <a href="#" class="btn btn-sm btn-primary" download>⬇ Скачать</a>
+              <a href="#" class="btn btn-sm btn-ghost" target="_blank">↗ Открыть</a>
+            </div>
+          </div>
+
+          <!-- TODO: замените название, описание и ссылку -->
+          <div class="material-card reveal reveal-delay-1">
+            <div class="material-icon">📄</div>
+            <div class="material-info">
+              <h4 class="material-name">Профилактика миопии у детей</h4>
+              <p class="material-desc">Научно обоснованные рекомендации по снижению риска развития близорукости</p>
+              <div class="material-meta">PDF · 1.8 МБ</div>
+            </div>
+            <div class="material-actions">
+              <!-- TODO: замените href на реальный путь к файлу -->
+              <a href="#" class="btn btn-sm btn-primary" download>⬇ Скачать</a>
+              <a href="#" class="btn btn-sm btn-ghost" target="_blank">↗ Открыть</a>
+            </div>
+          </div>
+
+          <!-- TODO: замените название, описание и ссылку -->
+          <div class="material-card reveal reveal-delay-2">
+            <div class="material-icon">📊</div>
+            <div class="material-info">
+              <h4 class="material-name">Методы контроля прогрессирования</h4>
+              <p class="material-desc">Сравнительный обзор современных методов замедления миопии</p>
+              <div class="material-meta">PDF · 3.1 МБ</div>
+            </div>
+            <div class="material-actions">
+              <!-- TODO: замените href на реальный путь к файлу -->
+              <a href="#" class="btn btn-sm btn-primary" download>⬇ Скачать</a>
+              <a href="#" class="btn btn-sm btn-ghost" target="_blank">↗ Открыть</a>
+            </div>
+          </div>
+
+          <!-- TODO: добавьте новые файлы, скопировав .material-card -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== АВТОРЫ ========== -->
+    <section class="authors-section" id="authors">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Команда</span>
+          <h2 class="section-title">Об авторах</h2>
+          <p class="section-desc">
+            <!-- TODO: замените описание -->
+            Проект подготовлен специалистами в области офтальмологии и педагогики.
+          </p>
+        </div>
+
+        <div class="authors-grid">
+
+          <!-- TODO: замените данные автора 1 -->
+          <div class="author-card reveal">
+            <div class="author-photo-wrap">
+              <!-- TODO: замените src на фото автора -->
+              <div class="author-photo-placeholder">
+                <span>АИ</span>
+              </div>
+              <div class="author-badge">Офтальмолог</div>
+            </div>
+            <div class="author-info">
+              <!-- TODO: замените имя -->
+              <h3 class="author-name">Анна Иванова</h3>
+              <!-- TODO: замените должность -->
+              <p class="author-role">Кандидат медицинских наук, врач-офтальмолог высшей категории</p>
+              <!-- TODO: замените описание -->
+              <p class="author-bio">
+                15 лет клинического опыта в детской офтальмологии.
+                Специализируется на контроле прогрессирования миопии.
+              </p>
+              <div class="author-contacts">
+                <!-- TODO: замените email -->
+                <a href="mailto:ivanova@example.com" class="author-contact-link">
+                  <span class="contact-icon">✉</span> ivanova@example.com
+                </a>
+                <!-- TODO: добавьте соцсети при необходимости -->
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO: замените данные автора 2 -->
+          <div class="author-card reveal reveal-delay-1">
+            <div class="author-photo-wrap">
+              <!-- TODO: замените src на фото автора -->
+              <div class="author-photo-placeholder">
+                <span>МС</span>
+              </div>
+              <div class="author-badge">Педагог</div>
+            </div>
+            <div class="author-info">
+              <!-- TODO: замените имя -->
+              <h3 class="author-name">Михаил Сидоров</h3>
+              <!-- TODO: замените должность -->
+              <p class="author-role">Педагог-методист, разработчик образовательных программ</p>
+              <!-- TODO: замените описание -->
+              <p class="author-bio">
+                Автор более 20 образовательных проектов для школьников и родителей.
+                Эксперт в области здоровьесберегающих технологий.
+              </p>
+              <div class="author-contacts">
+                <!-- TODO: замените email -->
+                <a href="mailto:sidorov@example.com" class="author-contact-link">
+                  <span class="contact-icon">✉</span> sidorov@example.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO: замените данные автора 3 -->
+          <div class="author-card reveal reveal-delay-2">
+            <div class="author-photo-wrap">
+              <!-- TODO: замените src на фото автора -->
+              <div class="author-photo-placeholder">
+                <span>ЕК</span>
+              </div>
+              <div class="author-badge">Исследователь</div>
+            </div>
+            <div class="author-info">
+              <!-- TODO: замените имя -->
+              <h3 class="author-name">Елена Кузнецова</h3>
+              <!-- TODO: замените должность -->
+              <p class="author-role">Научный сотрудник, специалист в области доказательной медицины</p>
+              <!-- TODO: замените описание -->
+              <p class="author-bio">
+                Занимается систематизацией клинических исследований
+                по теме прогрессирования миопии у детей школьного возраста.
+              </p>
+              <div class="author-contacts">
+                <!-- TODO: замените email -->
+                <a href="mailto:kuznetsova@example.com" class="author-contact-link">
+                  <span class="contact-icon">✉</span> kuznetsova@example.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO: добавьте авторов, скопировав .author-card -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== ПОДВАЛ ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-eye">👁</span>
+        <!-- TODO: замените название проекта -->
+        <span>МиоПравда</span>
+      </div>
+      <!-- TODO: замените текст подвала -->
+      <p class="footer-copy">© 2025 Образовательный проект «Мифы о детской миопии». Все права защищены.</p>
+      <p class="footer-disclaimer">Материалы носят информационный характер и не заменяют консультацию специалиста.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
