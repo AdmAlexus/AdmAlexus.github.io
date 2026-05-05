@@ -690,6 +690,13 @@ h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; }
   margin-bottom: 3rem;
 }
 
+.conclusion-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap);
+  margin-bottom: 3rem;
+}
+
 .conclusion-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
