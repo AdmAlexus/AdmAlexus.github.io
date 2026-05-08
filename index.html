@@ -32,8 +32,11 @@
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#hero" class="nav-link">Вступление</a></li>
+		<li><a href="#intro" class="nav-link">Введение</a></li>
         <li><a href="#myths" class="nav-link">Мифы</a></li>
+		<li><a href="#important" class="nav-link">Важно</a></li>
         <li><a href="#conclusion" class="nav-link">Итоги</a></li>
+		<li><a href="#takeaway" class="nav-link">Вывод</a></li>
         <li><a href="#materials" class="nav-link">Материалы</a></li>
         <li><a href="#authors" class="nav-link">Авторы</a></li>
       </ul>
@@ -104,6 +107,90 @@
         </svg>
       </div>
     </section>
+	
+	<section class="myths-section" id="intro" style="background: var(--bg-section);">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="section-tag">С чего начать</span>
+      <h2 class="section-title">Что такое детская миопия?</h2>
+      <p class="section-desc">
+        Прежде чем разбирать мифы — разберёмся, что происходит с глазом
+        и почему это важно знать каждому родителю.
+      </p>
+    </div>
+
+    <!-- Карточка в стиле myth-card, но без аккордеона — всегда открыта -->
+    <article class="myth-card reveal" style="box-shadow: var(--shadow-md);">
+
+      <!-- Шапка (нет кнопки — просто div) -->
+      <div class="myth-card-header" style="cursor: default; pointer-events: none; border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;">
+        <div class="myth-number" style="opacity: 0.45;">00</div>
+        <div class="myth-label-wrap">
+          <span class="myth-label" style="background: rgba(139,94,60,0.12); color: var(--color-accent);">ВВЕДЕНИЕ</span>
+          <h3 class="myth-title">👁 Глазное яблоко, миопия и почему она прогрессирует</h3>
+        </div>
+      </div>
+
+      <!-- Тело — всегда раскрыто (нет аккордеон-логики) -->
+      <div class="myth-body-inner" style="
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        border-radius: 0 0 calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px);
+      ">
+
+        <!-- Факт-блок: механизм миопии -->
+        <div class="myth-fact">
+          <div class="fact-icon">🔬</div>
+          <div>
+            <strong class="fact-title">Как устроена миопия</strong>
+            <p>
+              При близорукости глазное яблоко удлиняется больше нормы.
+              Из-за этого изображение фокусируется <strong>перед сетчаткой</strong>, а не на ней —
+              дальние объекты становятся размытыми, а ближние видны чётко.
+            </p>
+            <p style="margin-top: 0.6rem;">
+              Миопия развивается постепенно — чаще всего в школьные годы,
+              когда зрительная нагрузка резко возрастает. Именно тогда глаз
+              наиболее уязвим и продолжает расти вместе с ребёнком.
+            </p>
+          </div>
+        </div>
+
+        <!-- Блок: почему важно -->
+        <!-- <div class="myth-conclusion">
+          <div class="fact-icon">📌</div>
+          <div>
+            <strong class="fact-title">Почему нельзя ждать?</strong>
+            <p>
+              Без коррекции и профилактики миопия прогрессирует.
+              Быстрое ухудшение (−0,5–1,0 дптр в год) повышает риск серьёзных
+              осложнений: отслойки сетчатки, глаукомы, катаракты.
+              <strong>Ранняя диагностика — лучший прогноз.</strong>
+            </p>
+            <p style="margin-top: 0.6rem;">
+              Регулярный осмотр офтальмолога: в 1 месяц, 1 год, 3 года,
+              перед школой — и затем ежегодно.
+            </p>
+          </div> 
+        </div>-->
+
+        <!-- Видео -->
+        <div class="video-wrap">
+          <div class="video-label">📹 Видео по теме</div>
+          <div class="video-responsive">
+            <iframe src="https://vk.com/video_ext.php?oid=8716947&id=456239031&hash=75efa38bfc1db49f" width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+        </div>
+
+      </div><!-- /.myth-body-inner -->
+    </article>
+
+  </div>
+</section>
+	
 
     <!-- ========== МИФЫ ========== -->
     <section class="myths-section" id="myths">
@@ -411,7 +498,70 @@
 
       </div>
     </section>
+	<section class="myths-section" id="important">
+  <div class="container">
 
+    <div class="section-header reveal">
+      <span class="section-tag" style="background: rgba(201,120,0,0.12); color: var(--color-primary-dk);">Важно знать</span>
+      <h2 class="section-title">На что обратить внимание прямо сейчас</h2>
+      <p class="section-desc">
+        Симптомы, которые нельзя игнорировать, и доказанные методы
+        замедления близорукости у детей.
+      </p>
+    </div>
+
+    <article class="myth-card reveal" style="box-shadow: var(--shadow-md);">
+
+      <div class="myth-card-header" style="
+        cursor: default;
+        pointer-events: none;
+        background: linear-gradient(135deg, #FFF0DC 0%, #fff 100%);
+        border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;
+      ">
+        <div class="myth-number" style="opacity: 0.45; color: var(--color-primary-dk);">!</div>
+        <div class="myth-label-wrap">
+          <span class="myth-label" style="background: rgba(232,145,10,0.18); color: var(--color-primary-dk);">ВАЖНО</span>
+          <h3 class="myth-title">⚠️ Признаки миопии и методы профилактики</h3>
+        </div>
+      </div>
+
+      <div class="myth-body-inner" style="
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        border-radius: 0 0 calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px);
+      ">
+
+        <!-- Признаки -->
+        <div class="myth-fact" style="background: #FFF8ED; border-left-color: var(--color-primary);">
+          <div class="fact-icon">👁</div>
+          <div>
+            <strong class="fact-title">Срочно обратитесь к офтальмологу, если ребёнок:</strong>
+            <p style="margin-top: 0.4rem;">
+              Щурится при взгляде вдаль<br>
+              Близко подносит книгу или телефон<br>
+              Часто трёт глаза<br>
+              Жалуется на головную боль к вечеру
+            </p>
+          </div>
+        </div>
+
+        
+
+        <!-- Видео -->
+        <div class="video-wrap">
+          <div class="video-label">📹 Видео по теме</div>
+          <div class="video-responsive">
+            <iframe src="https://vk.com/video_ext.php?oid=8716947&id=456239032&hash=d3eee51297daf4a4" width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+        </div>
+
+      </div><!-- /.myth-body-inner -->
+    </article>
+
+  </div>
+</section>
     <!-- ========== ЗАКЛЮЧЕНИЕ ========== -->
     <section class="conclusion-section" id="conclusion">
       <div class="container">
@@ -490,6 +640,80 @@
         </div>
       </div>
     </section>
+
+<section class="myths-section" id="takeaway" style="background: var(--bg-section);">
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="section-tag" style="background: rgba(107,142,78,0.15); color: var(--color-secondary);">Итог</span>
+      <h2 class="section-title">Главное — коротко</h2>
+      <p class="section-desc">
+        Три вещи, которые стоит запомнить после знакомства с проектом.
+      </p>
+    </div>
+
+    <article class="myth-card reveal" style="box-shadow: var(--shadow-md);">
+
+      <div class="myth-card-header" style="
+        cursor: default;
+        pointer-events: none;
+        background: linear-gradient(135deg, var(--color-secondary-lt) 0%, #fff 100%);
+        border-radius: calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px) 0 0;
+      ">
+        <div class="myth-number" style="opacity: 0.45; color: var(--color-secondary);">✓</div>
+        <div class="myth-label-wrap">
+          <span class="myth-label" style="background: rgba(107,142,78,0.15); color: var(--color-secondary);">ВЫВОДЫ</span>
+          <h3 class="myth-title">🎯 Два главных вывода для родителей</h3>
+        </div>
+      </div>
+
+      <div class="myth-body-inner" style="
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        border-radius: 0 0 calc(var(--radius-lg) - 1px) calc(var(--radius-lg) - 1px);
+      ">
+
+        <!-- Вывод 1 -->
+        <div class="myth-fact" style="background: var(--color-secondary-lt); border-left-color: var(--color-secondary);">
+          <div class="fact-icon">🌿</div>
+          <div>
+            <strong class="fact-title">Вывод 1: доверяйте науке, а не мифам</strong>
+            <p>
+              Ни черника, ни гимнастика для глаз, ни «перерастёт» — не защитят
+              зрение ребёнка. Современная офтальмология располагает
+              доказательными методами замедления миопии. Обратитесь к специалисту.
+            </p>
+          </div>
+        </div>
+
+        <!-- Вывод 2 -->
+        <div class="myth-conclusion">
+          <div class="fact-icon">🏥</div>
+          <div>
+            <strong class="fact-title">Вывод 2: регулярный осмотр — не опция, а норма</strong>
+            <p>
+              Плановые осмотры офтальмолога позволяют поймать проблему
+              на раннем этапе. Не ждите, пока ребёнок начнёт щуриться —
+              к тому моменту миопия уже прогрессирует.
+            </p>
+          </div>
+        </div>
+
+        <!-- Видео-итог -->
+        <div class="video-wrap">
+          <div class="video-label">📹 Итоговое видео</div>
+          <div class="video-responsive">
+            <iframe src="https://vk.com/video_ext.php?oid=8716947&id=456239024&hash=713e4d60fd8923bd" width="640" height="360" frameborder="0" allowfullscreen="1" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </div>
+        </div>
+
+      </div><!-- /.myth-body-inner -->
+    </article>
+
+  </div>
+</section>
 
     <!-- ========== СПРАВОЧНЫЕ МАТЕРИАЛЫ ========== -->
     <section class="materials-section" id="materials">
